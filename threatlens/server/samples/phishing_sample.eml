@@ -1,0 +1,56 @@
+Return-Path: <bounce-4471@mailer-cheap.top>
+Received: from mx.example.com (mx.example.com [203.0.113.25])
+	by inbox.example.com with LMTP; Thu, 29 Oct 2026 09:14:07 +0000
+Received: from paypa1-security.com (unknown [185.220.101.1])
+	by mx.example.com (Postfix) with ESMTP id 4F2A1C0042
+	for <alex@example.com>; Thu, 29 Oct 2026 09:14:05 +0000
+Authentication-Results: mx.example.com;
+	spf=fail (sender IP is 185.220.101.1) smtp.mailfrom=paypa1-security.com;
+	dkim=none (message not signed);
+	dmarc=fail action=none header.from=paypa1-security.com
+From: "PayPal Security Team" <service@paypa1-security.com>
+Reply-To: <refunds.desk@proton-secure-mail.xyz>
+To: Alex <alex@example.com>
+Subject: URGENT: Your account has been suspended - action required
+Date: Thu, 29 Oct 2026 09:13:58 +0000
+Message-ID: <20261029091358.4471@paypa1-security.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUNDARY-OUTER"
+
+--BOUNDARY-OUTER
+Content-Type: multipart/alternative; boundary="BOUNDARY-INNER"
+
+--BOUNDARY-INNER
+Content-Type: text/plain; charset="utf-8"
+
+Dear Customer,
+
+We noticed unusual activity on your account. Your account has been suspended.
+Verify your identity within 24 hours or your account will be closed.
+
+Sign in: https://www.paypal.com/signin
+
+PayPal Security Team
+
+--BOUNDARY-INNER
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We noticed <b>unusual activity</b> on your account. Your account has been <b>suspended</b>.</p>
+<p>Verify your identity within 24 hours or your account will be closed.</p>
+<p><a href="https://secure-login-paypa1.com/verify?id=8812">https://www.paypal.com/signin</a></p>
+<p>See the attached invoice for the disputed payment.</p>
+<p>PayPal Security Team</p>
+</body></html>
+
+--BOUNDARY-INNER--
+
+--BOUNDARY-OUTER
+Content-Type: text/html; name="Invoice_88231.pdf.html"
+Content-Disposition: attachment; filename="Invoice_88231.pdf.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PHA+TG9hZGluZyB5b3VyIGludm9pY2UsIHBsZWFzZSB3YWl0Li4uPC9wPjwvYm9keT48L2h0bWw+
+
+--BOUNDARY-OUTER--
